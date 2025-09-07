@@ -1,0 +1,2 @@
+If you fork this project and plan to distrubte your fork; please make meaningful changes to the datapack instead of minimal ones. "Meaningful changes" can vary from porting the datapack to newer versions, in the case that something important breaks (like the BFS or running circuits), to adding completly new features that significantly improve QOL, performance, or some other features. 
+In the case that the change is small, just make a PR, state what the point of your change(s) is, along with any additonal media (like benchmarks if it improves performance).
