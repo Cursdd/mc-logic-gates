@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "used_wrench": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "lg.wrench_cd": 0
+                }
+              }
+            ]
+          }
+        ],
+        "item": {
+          "items": "minecraft:stick",
+          "components": {
+            "minecraft:custom_data": {
+              "lg.wrench": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "used_wrench"
+    ]
+  ],
+  "rewards": {
+    "function": "lg:modify_ui/edit/properties/toggle_mode"
+  }
+}

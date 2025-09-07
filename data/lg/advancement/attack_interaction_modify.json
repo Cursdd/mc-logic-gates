@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "attack_interaction": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:stick",
+              "components": {
+                "minecraft:custom_data": {
+                  "lg.wrench": true
+                }
+              }
+            }
+          }
+        },
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"lg.uiHitbox\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "attack_interaction"
+    ]
+  ],
+  "rewards": {
+    "function": "lg:modify_ui/edit/init"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "criteria": {
+    "used_interaction": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:stick",
+                    "components": {
+                      "minecraft:custom_data": {
+                        "lg.wrench": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "entity": {
+          "type": "minecraft:interaction"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "used_interaction"
+    ]
+  ],
+  "rewards": {
+    "function": "lg:modify_ui/place/single/init"
+  }
+}

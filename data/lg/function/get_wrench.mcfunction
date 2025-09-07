@@ -1,0 +1,1 @@
+give @s stick[custom_data={lg.wrench:true},consumable={consume_seconds:100000000},item_name="Wrench",lore=[{"color":"white","text":"Used to modify / display wire and gate data"}]] 1

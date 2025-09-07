@@ -1,0 +1,1 @@
+$execute positioned ~$(hitboxRight) ~ ~ run function lg:spawn_ui/2/for_hitbox/x/loop with storage lg:temp

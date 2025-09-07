@@ -1,0 +1,1 @@
+scoreboard players operation @s lg.ID = @n[tag=lg.wire] lg.ID

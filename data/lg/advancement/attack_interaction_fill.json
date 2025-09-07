@@ -1,0 +1,59 @@
+{
+  "criteria": {
+    "attack_interaction": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type_specific": {
+                    "type": "minecraft:player",
+                    "input": {
+                      "sprint": true
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "mainhand": {
+                        "items": "minecraft:stick",
+                        "components": {
+                          "minecraft:custom_data": {
+                            "lg.wrench": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"lg.uiHitbox\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "attack_interaction"
+    ]
+  ],
+  "rewards": {
+    "function": "lg:modify_ui/break/fill/init"
+  }
+}
