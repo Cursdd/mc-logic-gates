@@ -1,2 +1,3 @@
 execute as @n[tag=lg.highlighted] if data entity @s block_state.Properties{lit:"false"} run return run data modify entity @s block_state.Properties.lit set value "true"
+
 execute as @n[tag=lg.highlighted] if data entity @s block_state.Properties{lit:"true"} run data modify entity @s block_state.Properties.lit set value "false"
