@@ -1,0 +1,2 @@
+summon block_display ^ ^-0.25 ^ {Tags:["lg.gate_input","lg.uiElement","lg.gate_temp","lg.gate"],CustomName:"",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.25f,0.25f,0.25f]},block_state:{Name:"minecraft:green_wool"}}
+summon block_display ^ ^0.25 ^ {Tags:["lg.gate_input","lg.uiElement","lg.gate_temp","lg.gate"],CustomName:"",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.25f,0.25f,0.25f]},block_state:{Name:"minecraft:green_wool"}}

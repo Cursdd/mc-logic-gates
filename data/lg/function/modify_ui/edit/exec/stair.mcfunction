@@ -13,3 +13,8 @@ tag @s remove in_e
 #Append tag from storage
 data modify entity @s Tags append from storage lg:ui Rotation.stair_tag1
 data modify entity @s Tags append from storage lg:ui Rotation.stair_tag2
+
+#Set custom name for wrench
+data modify entity @s CustomName set from storage lg:ui Rotation.stair_display
+
+function lg:bfs/find_root/get_type

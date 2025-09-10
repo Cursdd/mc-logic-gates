@@ -7,4 +7,6 @@ data modify entity @s block_state.Properties.facing set from storage lg:ui Rotat
 data modify entity @s Tags append from storage lg:ui Rotation.stair_tag1
 data modify entity @s Tags append from storage lg:ui Rotation.stair_tag2
 
+data modify entity @s CustomName set from storage lg:ui Rotation.stair_display
+
 function lg:bfs/find_root/get_type

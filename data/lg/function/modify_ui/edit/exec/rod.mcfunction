@@ -13,3 +13,5 @@ tag @s remove wte
 
 #Append tag from storage
 data modify entity @s Tags append from storage lg:ui Rotation.rod_tag
+
+function lg:bfs/find_root/get_type

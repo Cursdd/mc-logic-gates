@@ -1,4 +1,6 @@
 #Set item from player's held item
+rotate @s ~ ~
+
 data modify storage lg:ui item set from entity @p[tag=lg.placing] SelectedItem.id
 data modify entity @s block_state.Name set from storage lg:ui item
 
@@ -22,7 +24,9 @@ execute if items entity @p[tag=lg.placing] weapon.mainhand #lg:grates run functi
 #Lamp
 execute if items entity @p[tag=lg.placing] weapon.mainhand minecraft:redstone_lamp run function lg:modify_ui/place/summon/wires/redstone_lamp
 
-#Rotate
-rotate @s ~ ~
+#Gates
+
+#AND
+execute if items entity @p[tag=lg.placing] weapon.mainhand minecraft:sea_lantern run function lg:modify_ui/place/summon/gates/modify_center
 
 tag @s remove temp
