@@ -1,6 +1,7 @@
 execute unless score $uiSize lg.VAR = $uiSize lg.VAR run scoreboard players set $uiSize lg.VAR 25
 
 #Set constants
+execute unless score #-1 lg.CONST matches -1 run scoreboard players set #-1 lg.CONST -1
 execute unless score #2 lg.CONST matches 2 run scoreboard players set #2 lg.CONST 2
 execute unless score #4 lg.CONST matches 4 run scoreboard players set #4 lg.CONST 4
 execute unless score #25 lg.CONST matches 25 run scoreboard players set #25 lg.CONST 25
