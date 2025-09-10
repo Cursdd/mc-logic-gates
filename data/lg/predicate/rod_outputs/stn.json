@@ -5,14 +5,14 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"etw\"]}"
+        "nbt": "{Tags:[\"stn\"]}"
       }
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"in_w\"]}"
+        "nbt": "{Tags:[\"in_s\"]}"
       }
     },
     {
@@ -33,7 +33,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"lg.gate_output\"]}"
+        "nbt": "{Tags:[\"lg.gate_input\"]}"
       }
     }
   ]

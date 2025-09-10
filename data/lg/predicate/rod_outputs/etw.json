@@ -12,7 +12,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"in_w\"]}"
+        "nbt": "{Tags:[\"in_e\"]}"
       }
     },
     {
@@ -33,7 +33,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"lg.gate_output\"]}"
+        "nbt": "{Tags:[\"lg.gate_input\"]}"
       }
     }
   ]

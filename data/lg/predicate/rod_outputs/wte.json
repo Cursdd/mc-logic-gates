@@ -5,7 +5,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"etw\"]}"
+        "nbt": "{Tags:[\"wte\"]}"
       }
     },
     {
@@ -33,7 +33,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{Tags:[\"lg.gate_output\"]}"
+        "nbt": "{Tags:[\"lg.gate_input\"]}"
       }
     }
   ]
