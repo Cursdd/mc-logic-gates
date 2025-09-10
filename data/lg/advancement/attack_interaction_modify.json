@@ -3,18 +3,93 @@
     "attack_interaction": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": {
-          "equipment": {
-            "mainhand": {
-              "items": "minecraft:stick",
-              "components": {
-                "minecraft:custom_data": {
-                  "lg.wrench": true
-                }
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:all_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "equipment": {
+                        "mainhand": {
+                          "items": "minecraft:stick",
+                          "components": {
+                            "minecraft:custom_data": {
+                              "lg.wrench": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "equipment": {
+                          "offhand": {
+                            "items": "minecraft:stick",
+                            "components": {
+                              "minecraft:custom_data": {
+                                "lg.wrench": true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "condition": "minecraft:all_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "equipment": {
+                        "offhand": {
+                          "items": "minecraft:stick",
+                          "components": {
+                            "minecraft:custom_data": {
+                              "lg.wrench": true
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "equipment": {
+                          "mainhand": {
+                            "items": "minecraft:stick",
+                            "components": {
+                              "minecraft:custom_data": {
+                                "lg.wrench": true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
               }
-            }
+            ]
           }
-        },
+        ],
         "entity": {
           "type": "minecraft:interaction",
           "nbt": "{Tags:[\"lg.uiHitbox\"]}"

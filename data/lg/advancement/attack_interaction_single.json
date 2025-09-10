@@ -14,7 +14,7 @@
                   "type_specific": {
                     "type": "minecraft:player",
                     "input": {
-                      "sprint": false	
+                      "sprint": false
                     }
                   }
                 }
@@ -27,6 +27,25 @@
                   "predicate": {
                     "equipment": {
                       "mainhand": {
+                        "items": "minecraft:stick",
+                        "components": {
+                          "minecraft:custom_data": {
+                            "lg.wrench": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "equipment": {
+                      "offhand": {
                         "items": "minecraft:stick",
                         "components": {
                           "minecraft:custom_data": {
