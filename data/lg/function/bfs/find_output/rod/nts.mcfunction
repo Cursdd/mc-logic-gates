@@ -1,10 +1,11 @@
 #Check for non bulbs
+tellraw @a "Found Rod: North to South"
 execute positioned ^ ^-0.25 ^ as @n\
 	[											\
-		predicate=lg:rod_inputs/stn,			\
+		predicate=lg:rod_outputs/nts,			\
 		distance=..0.001						\
 	] \
-at @s run function lg:bfs/find_root/get_type
+at @s run function lg:bfs/find_output/get_type
 
 #Check for bulbs
 execute positioned ^ ^-0.25 ^ if entity @n\
@@ -12,4 +13,4 @@ execute positioned ^ ^-0.25 ^ if entity @n\
 		tag=lg.bulb,							\
 		distance=..0.001						\
 	] \
-run function lg:bfs/bulb_skip {"dirX":0,"dirY":-0.25,"predicate":"lg:rod_inputs/stn","flood_dir":"root"}
+run function lg:bfs/bulb_skip {"dirX":0,"dirY":-0.25,"predicate":"lg:rod_outputs/nts","flood_dir":"output"}

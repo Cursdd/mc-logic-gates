@@ -1,0 +1,4 @@
+execute positioned ^0.25 ^ ^ unless entity @n[tag=lg.gate_output,distance=..0.001] if entity @n[distance=..0.001] positioned ^-0.25 ^ ^ run function lg:bfs/find_root/rod/wte
+execute positioned ^-0.25 ^ ^ unless entity @n[tag=lg.gate_output,distance=..0.001] if entity @n[distance=..0.001] positioned ^0.25 ^ ^ run say hi
+execute positioned ^ ^0.25 ^ unless entity @n[tag=lg.gate_output,distance=..0.001] if entity @n[distance=..0.001] positioned ^ ^-0.25 ^ run function lg:bfs/find_root/rod/nts
+execute positioned ^ ^-0.25 ^ unless entity @n[tag=lg.gate_output,distance=..0.001] if entity @n[distance=..0.001] positioned ^ ^0.25 ^ run function lg:bfs/find_root/rod/stn

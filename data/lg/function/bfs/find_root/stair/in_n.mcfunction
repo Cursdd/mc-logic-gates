@@ -1,4 +1,4 @@
-#Check to the right for input entities
+#Check to the north for input entities
 #say in_n
 execute positioned ^ ^0.25 ^ as @n\
 	[									  \
@@ -8,11 +8,11 @@ execute positioned ^ ^0.25 ^ as @n\
 	] \
 at @s run function lg:bfs/find_root/get_type
 
-#Check to the right for bulbs entities
+#Check to the north for bulbs entities
 execute positioned ^ ^0.25 ^ if entity @n\
 	[											\
 		tag=lg.bulb,							\
 		tag=!lg.searched,						\
 		distance=..0.001						\
 	] \
-run function lg:bfs/find_root/bulb_skip {"dirX":0,"dirY":0.25,"predicate":"lg:rod_inputs/nts"}
+run function lg:bfs/bulb_skip {"dirX":0,"dirY":0.25,"predicate":"lg:rod_inputs/nts","flood_dir":"root"}
